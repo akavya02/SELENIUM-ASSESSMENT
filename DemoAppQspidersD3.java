@@ -15,7 +15,7 @@ public class DemoAppQspidersD3 {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://demoapps.qspiders.com/ui/datePick?sublist=0");
-        driver.findElement(By.xpath("//input[@placeholder='Select A Date']")).click();
+        driver.findElement(By.xpath("//*[name()='svg' and @viewBox='0 0 1024 1024']")).click();
         Thread.sleep(5000);
         driver.findElement(By.xpath("//button[@class='react-datepicker__navigation react-datepicker__navigation--next']")).click();
         Thread.sleep(5000);
@@ -35,4 +35,3 @@ public class DemoAppQspidersD3 {
         driver.quit();
     }
 }
-
