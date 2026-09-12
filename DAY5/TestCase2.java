@@ -19,7 +19,7 @@ public class TestCase2 {
 
 	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		FileInputStream file=new FileInputStream("./src/test/resources/DAY5/TeastCase2.xlsx");
+		FileInputStream file=new FileInputStream("./src/test/resources/DAY5/TestCase2.xlsx");
 		Workbook wb = WorkbookFactory.create(file);
 	    Sheet sh = wb.getSheet("Sheet1");
 	    Row row = sh.getRow(1);
